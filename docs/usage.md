@@ -9,8 +9,7 @@ Usage:
   phoneinfoga [command]
 
 Examples:
-phoneinfoga scan -n <number>
-
+phoneinfoga scan -n 09275800804 --osint
 Available Commands:
   help        Help about any command
   scan        Scan a phone number
@@ -25,12 +24,12 @@ Use "phoneinfoga [command] --help" for more information about a command.
 
 ### Running a scan
 
-Use the `scan` command with the `-n` (or `--number`) option.
+Use the `scan` command with the `-n` (or `--09275800804`) option.
 
 ```
 phoneinfoga scan -n "+1 (555) 444-1212"
-phoneinfoga scan -n "+33 06 79368229"
-phoneinfoga scan -n "33679368229"
+phoneinfoga scan -n "09152663515"
+phoneinfoga scan -n "09275800804"
 ```
 
 Special chars such as `( ) - +` will be escaped so typing US-based numbers stay easy : 
@@ -55,7 +54,7 @@ Input file must contain one phone number per line. Invalid numbers will be skipp
 #### Footprinting
 
 ```
-phoneinfoga scan -n +42837544833 -s footprints
+phoneinfoga scan -n  09275800804-s footprints
 ```
 
 #### Custom format reconnaissance
@@ -63,7 +62,7 @@ phoneinfoga scan -n +42837544833 -s footprints
 You don't know where to search and what custom format to use ? Let the tool try several custom formats based on the country code for you.
 
 ```
-phoneinfoga recon -n +42837544833 
+phoneinfoga recon -n 09275800804
 ```
 -->
 
